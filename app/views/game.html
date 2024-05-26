@@ -6,15 +6,24 @@
         <link rel="stylesheet" type="text/css" href="css/settings.css">
     </head>
     <body>
+        <button id="connectButton">Connect MetaMask Wallet</button>
+        <div id="verificationOverlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; color: white; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <img src="images/verification-image.jpeg" alt="Verification Required" style="max-width: 90%; max-height: 80%; margin-bottom: 20px;">
+            <button id="verificationButton" style="padding: 10px 20px; font-size: 16px;">I am not a robot! I am a human being!</button>
+        </div>
+        
+        
         <a id="top"></a>
         <div id="cover">
             <div class="navigation">
-                <label class="nav-label">You are <input id="player-name" readonly="readonly" maxlength="10"></input></label>
+                <label class="nav-label">Hit the grey block to verify!<input id="player-name" readonly="readonly" maxlength="10"></input></label>
                 <div class="nav-button-bar">
-                    <a href="#top" id="play-or-watch-button" title="Spectate or rejoin game">Watch</a>
-                    <a href="#playerSettings" title="Go to settings">Settings</a>
+                    <a href="#top" id="play-or-watch-button" title="Spectate or rejoin game"></a>
+                    <a href="#playerSettings" title="Go to settings"></a>
                     <button id="full-screen-button" title="Go into full-screen mode"/>
                 </div>
+            </div>
+
             </div>
             <div id="kill-messages">
             </div>

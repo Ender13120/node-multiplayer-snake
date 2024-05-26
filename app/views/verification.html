@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verification</title>
+    <link rel="stylesheet" type="text/css" href="css/global.css" />
+    <style>
+      #verificationOverlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff; /* Solid white background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1000; /* Ensures it stays on top of other content */
+      }
+      #verificationOverlay img {
+        max-width: 90%;
+        max-height: 80%;
+        margin-bottom: 20px;
+      }
+      #verificationOverlay button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="verificationOverlay">
+      <img src="/images/verification-image.jpg" alt="Verification Image" />
+      <button id="verifyButton">I am not a robot! I am a human being!</button>
+    </div>
+
+    <script>
+      document
+        .getElementById("verifyButton")
+        .addEventListener("click", function () {
+          window.location.href = "game.html"; // Redirects to the main game page
+        });
+    </script>
+  </body>
+</html>
